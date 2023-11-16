@@ -36,22 +36,22 @@ Required to convert PDFs to PNGs.
 Assuming you already downloaded and installed Qt 5.8+, you can proceed to install the other dependencies:
 
 ```
-$ sudo apt-get -y install git libpoppler-qt5-dev qml-module-qt-labs-platform
+$ sudo apt-get -y install git libpoppler-qt5-dev qml-module-qt-labs-platform qml-module-qtquick-layouts qml-module-qtquick-controls qml-module-qtquick-controls2 qtdeclarative5-dev qml-module-qt-labs-folderlistmodel qml-module-qt-labs-calendar qml-module-qt-labs-settings
 ```
 
 Now, clone this repo:
 
 ```
-git clone https://github.com/knro/chartdownloader
+git clone git@github.com:ChrisWheelerAragon/chartdownloader.git
 
 ```
 
 Next, build it with *qmake*.
 ```
-cd chart-downloader
+cd chartdownloader
 mkdir build
 cd build
-qmake ../chart-downloader.pro
+qmake ../chartdownloader.pro
 make
 ```
 
