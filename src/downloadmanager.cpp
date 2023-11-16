@@ -189,7 +189,7 @@ void DownloadManager::downloadNextChart()
     m_downloadProgressStatus = tr("Downloading %1").arg(oneChart->name);
     emit downloadProgressChanged(m_downloadProgress);
 
-    downloadJob->get(oneChart->url);
+    downloadJob->get(oneChart->url.replace("http", "https"));
 }
 
 void DownloadManager::processDownloadSucess()

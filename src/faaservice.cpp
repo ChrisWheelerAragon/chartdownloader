@@ -59,7 +59,8 @@ bool FAAService::startDownload(const QString &airportID, bool getAirport, bool g
 void FAAService::downloadPage()
 {
     // Get current cycle from 1-week in the future
-    QDate currentDate = QDate::currentDate().addDays(7);
+    //QDate currentDate = QDate::currentDate().addDays(7);
+    QDate currentDate = QDate::currentDate();
     QString cycle = currentDate.toString("yyMM");
     // Special case
     if (currentDate.month() == 12 && currentDate.day() >= 7)
